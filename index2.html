@@ -1,0 +1,1594 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <h1 id="h1">Hello World</h1> -->
+    <!-- <div id="msg"></div>
+    <div id="msg1"></div>
+    <input type="text" id="nam">
+    <input type="text" id="nam1">
+    <div id="name1"></div> -->
+    <!-- <div >Your Student Is =>  <span id="name"></span></div> -->
+</body>
+<script>
+//1
+// if(true){
+// console.log(a);
+// 	var a=3;
+// console.log(a);
+// }
+
+// if(true){
+// console.log(b);
+// 	let b=2;
+// console.log(b);
+// }
+// //2
+// var c=4;
+// let d=5;
+// console.log(c);
+// console.log(d);
+
+// //3
+// function vl(){
+// var e = 5;
+// let f=5;
+// return e+f;
+// }
+
+// console.log(vl());
+
+// //4
+// var g=4;
+// let h=4;
+// if(g===h){
+// function ab(){
+// return g+h
+// }
+// console.log(ab())
+// }
+// else{
+// console.log("g not equal to h")
+// }
+
+// //5
+// var k=4;
+// let l=4;
+// function ab2(){
+// if(k === l){
+// var i= 5;
+// let j = 6;
+
+// return k+l+i+j
+// }
+
+// else{
+// console.log("a not equal to b")
+// }
+// }
+// console.log(ab2())
+
+
+// //6
+// var a1=4;
+// let b1=4;
+
+// console.log(ab1());
+// function ab1(){
+// if(a1 === b1){
+// var c1= 5;
+// let d1 = 6;
+
+// return a1+b1+c1+d1
+// }
+
+// else{
+// console.log("a not equal to b")
+// }
+// }
+// //7
+// var m;
+// m = function(){};
+// console.log(m);
+// m=1;
+// m=5;
+// console.log(m);
+
+// //8
+
+// console.log(ax);
+// var ax = 1;
+// function ax(){};
+// var ax=15;
+// console.log(ax);
+
+
+// //9
+// var vl1 = 1;
+// if(true){
+//     vl1 = function(){};
+//     vl1 = 10;
+//     let vl1=50;
+// }
+// console.log(vl1);
+
+// //10
+// var d1 = 1;
+// if(true){
+//     function d1(){};
+//     var d1 = 10;
+// }
+// console.log(d1);
+
+// //11
+// let n = 1;
+// if(true){
+//     n= function(){};
+//      n;
+//      n;
+//     n = 10;
+// }
+// console.log(n);
+
+// //12
+// var o = 1;
+// if(true){
+//     function O(){};
+//      o = 10;
+// }
+// console.log(O)
+
+
+
+// var p = 1;
+// if(true){
+//     function p(){};
+//     p=10;
+//     console.log(p)
+// }
+// console.log(p);
+
+
+
+
+// var q=1;
+// if(true){
+//     q=function(){};
+//     q=10
+// }
+// console.log(q);
+
+
+// var r=1;
+// if(true){
+//     function q(){};
+//     q=10
+// }
+// console.log(q)
+
+// var s=1;
+// if(true){
+//     var s = function(){}
+//     s=10
+// }
+// console.log(s)
+
+// var t=1;
+// if(true){
+//     var t = function(){}
+//     t=10
+//     console.log(t)
+// }
+// console.log(t)
+
+
+
+
+// var func = () => {
+//     console.log("Hello world")
+// }
+// func()
+
+// var f = () => console.log("Heloo")
+
+// f()
+
+
+
+
+
+
+
+// var x21= 5;
+// var z21 = 15;
+
+// console.log(`Your result is ${x21 + z21}`);
+//Practice
+
+
+// var array = [0,1,2,3,4,5,6,7,8,9,10].map(
+//     function(num){
+//         return Math.pow(num,2);
+//     }
+// )
+// console.log(array);
+
+// var arrayl = [];
+// var x = localStorage.getItem("data");
+
+
+// if(x === null){
+//     x = [];
+// }
+// else{
+//     x = JSON.parse(x);
+// }
+
+// var obj = {
+//     fName : "Darpan",
+//     lName : "Goswami"
+// }
+
+// arrayl.push(obj);
+// localStorage.setItem("data",JSON.stringify(arrayl));
+
+// var elementId = "name";
+
+// function studentData(rollNum){
+//     var student = localStorage.getItem("data");
+//    student = JSON.parse(student);
+//     // console.log(student);
+//     if(student === null){
+//         throw new console.error("Your student is not defined");
+//     }
+//     else{
+//         document.getElementById(`${elementId}`).innerHTML = `${rollNum},${student[0].fName},${student[0].lName}`
+//     }
+
+// }
+
+// studentData(106);
+
+
+// var obj = {
+//     fName : "Darpan",
+//     lName : "Goswami"
+// }
+// var elementId = "name";
+// var find = (db, id)=> {
+// 	var obj = db.get(id);
+// 	if(obj === null) {
+// 		throw new Error('Object not found!');
+// 	}
+// 	return obj;
+// };
+// var csv = (student)=> {
+// 	return `${student.ssn}, ${student.firstname}, ${student.lastname}`;
+// };
+// var append = (elementId, info)=> {
+// 	document.getElementById(elementId).innerHTML = info;
+// };
+// function run(a,b,c){
+//     return a,b,c
+// }
+// var x = run(append(elementId),csv,find(obj));
+// x("444-44-444")
+
+// var find = curry(function (db, id) {
+// 	var obj = db.id;
+// 	if(obj === null) {
+// 		throw new Error('Object not found!');
+// 	}
+// 	return obj;
+// });
+
+// var csv =(student) => {
+// 	return `${student.ssn}, ${student.firstname}, ${student.lastname}`;
+// };
+
+// var append = curry(function (elementId, info) {
+// 	document.getElementById(elementId).innerHTML = info;
+// });
+
+// function run(){
+//     console.log(a,b,c)
+// }
+
+// var showStudent = run( append('name'), csv, find(obj) );
+
+
+// showStudent('444-44-4444');
+
+
+
+
+
+
+
+
+
+
+
+
+//Slide 2 Examples
+//call Back Function Practice
+//1
+console.log("//Example ==> 1");
+let text = "Domo arigato!";
+console.log("Before defining functions");
+
+let useless =  (ninjaCallback) => {
+	 console.log("In useless function");
+	return ninjaCallback();
+}
+let getText = ()=> {
+	console.log("In getText function");
+	return text;
+}
+
+console.log("Before making all the calls");
+console.log(useless(getText))
+console.log("After the calls have been made");
+
+//2
+console.log("//Example ==> 2");
+let myFunc = num => num;
+console.log(myFunc(15));
+
+//3
+console.log("//Example ==> 3");
+let myFunctionName = ( myFirstArg, mySecondArg ) => {	
+    //myStatement1;
+    if(myFirstArg !== mySecondArg){
+        console.log(true)
+    }
+	//myStatement2;
+    else{
+        console.log(false)
+    }
+}
+myFunctionName(15,16)
+
+//4
+console.log("//Example ==> 4");
+let samurai=()=> "samurai here";
+let ninja=() =>{
+	let hiddenNinja=()=> "ninja here";
+	return hiddenNinja();
+}
+
+console.log(samurai());
+
+console.log(ninja());
+//5
+console.log("//Example ==> 5");
+let myFunctionDeclaration=()=>{
+	let innerFunction=()=> console.log("innerfunction");
+    console.log("myFunctionDeclaration");
+    return innerFunction();
+}
+myFunctionDeclaration();
+
+
+
+
+let myFunc1 = ()=>console.log("myfunc1");
+myFunc1();
+
+//6
+console.log("//Example ==> 6");
+function x(num){ return num*2}
+console.log(x(4));
+
+//7
+console.log("//Example ==> 7");
+function greet(name) { return "Greetings " + name};
+console.log(greet("Haider"));
+
+//8
+console.log("//Example ==> 8");
+var greet = function(name){
+var helloString = 'Greetings ';
+return helloString + name;
+};
+console.log(greet("Darpan"));
+//9
+console.log("//Example ==> 9");
+var skulk = ninja => {
+	return performAction(ninja, "skulking");
+}
+var performAction = (person, action)=>{
+	// return person + " - " + action;
+    return `${person} - ${action}`
+};
+var rule = function(daimyo){ 
+    return performAction(daimyo, "ruling")
+};
+console.log(skulk("Hattori"));
+console.log(rule("Oda Nobunaga"));
+
+
+
+
+//10
+console.log("//Example ==> 10")
+//Function constructors
+//1
+console.log("//Example ==> 10.1");
+function Cons(value1,value2,result=value1+value2){
+    this.name = value1;
+    this.fName = value2;
+    this.func = function(){
+        return result
+    }
+}
+let consRes = new Cons("Darpan ","Ramesh")
+console.log(consRes);
+console.log(consRes.func());
+
+//2
+console.log("//Example ==> 10.2");
+function Fun(name,id,course){
+    this.name = name;
+    this.obj = {
+        id:id,
+    };
+    this.course = course
+}
+let funRes = new Fun("Darpan",106,"Web & Mobile App");
+console.log(funRes)
+console.log(funRes.name,funRes.obj,funRes.course) 
+
+//3
+console.log("//Example ==> 10.3");
+class Val{
+    constructor(value){
+        this.value = value;
+        this.value2 = this.value+ 5;
+       this.result = ()=>{
+                if(this.value < this.value2){
+                    console.log("Your First is Less then Second");
+                }
+                else{
+                    console.log("Result is not defiend")
+                }
+            }
+    }
+}
+let valRes = new Val(5);
+console.log(valRes);
+valRes.result()
+
+
+//11
+console.log("//Example ==> 11");
+//1
+console.log("//Example ==> 11.1");
+function *Genr(){
+    yield "Darpan";
+    yield "Rashid";
+    yield "Beerbal";
+}
+let GenrRes = Genr();
+console.log(GenrRes.next().value);
+console.log(GenrRes.next().value);
+console.log(GenrRes.next().value);
+
+//2
+console.log("//Example ==> 11.2");
+function *generator(item){
+    for(let i=0;i<item.length;i++){
+        yield item[i]
+    }
+}
+let array1 = ["Darpan",106,"Mithi"];
+let generatorRes = generator(array1);
+console.log(generatorRes.next().value);
+console.log(generatorRes.next().value);
+console.log(generatorRes.next().value);
+// console.log(generatorRes.next().value);
+
+
+//3
+console.log("//Example ==> 11.3");
+function *gener(values){
+    for(let i=0;i<values.length;i++){
+        yield   values[i]
+    }
+}
+let aray = ["101","102","103","104","105","106","107","108","109","110"];
+let resu = gener(aray)
+for(let i=0;i<=aray.length;i++){
+    console.log(resu.next().value)
+};
+
+//12
+console.log("//Example ==> 12");
+//Rest Parameter 
+//1
+console.log("//Example ==> 12.1");
+function num(...value){
+    for(var i=0;i<value.length;i++){
+        console.log(value[i])
+    }
+}
+num(1,2,3,4,5,6,7,8,9,10);
+
+//2
+console.log("//Example ==> 12.2");
+let restp = (...num)=>{
+    if(num[0] < num[1]){
+        console.log("Result ",true);
+    }
+    else{
+        console.log("Result ",false)
+    }
+}
+restp(5,10);
+
+//13
+console.log("//Example ==> 13");
+//1
+console.log("//Example ==> 13.1");
+function df(first,second=first){
+    if(first === second){
+        console.log("Correct")
+    }
+    else{
+        console.log("False")
+    }
+}
+df(10)
+
+//2
+console.log("//Example ==> 13.2");
+let para = (name="Darpan",from)=>{
+    return name +" "+ from
+}
+console.log(para(undefined,"Mithi"))
+
+//3
+console.log("//Example ==> 13.3");
+let par = (num,num2 = 14)=>{
+    if(num > num2){
+        console.log("Correct Value")
+    }
+    else{
+        console.log("False value")
+    }
+}
+par(20);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// //14
+// console.log("//Example ==> 14");
+// //1
+// console.log("//Example ==> 14.1");
+// let obj = {
+//     result :"Vallue",
+//     getRes : () => this.result
+// }
+
+// console.log(obj.getRes())
+
+// document.getElementById("msg").innerHTML = `<h1>Hello </h1>`;
+// let name = `<span>Darpan</span>`
+// document.getElementById(`nam`).value = name;
+// let obj = {
+//     name:`<p>Darpan</p>`
+// }
+// document.getElementById(`name`).innerHTML = obj.name;
+
+
+
+
+
+
+// let name2 = (id,tag,msg)=>{
+//     document.getElementById(`${id}`).innerHTML = `<${tag}>${msg}</${tag}>`
+// }
+// name2(`msg1`,`h1`,`Hello`);
+
+// let nam = (id,tag,msg) => {
+//     let name = msg;
+//     document.getElementById(`${id}`).value = `<${tag}>Hello${name}</${tag}>`
+// }
+// nam(`nam1`,`span`,`Darpan`);
+
+// let name1 = (id,tag,msg) => {
+//     let obj1 = {
+//         id:id,
+//         tag:tag,
+//         msg:msg
+//     }
+//     document.getElementById(`${obj1.id}`).innerHTML = `<${obj1.tag}>${obj1.msg}</${obj1.tag}>`
+// }
+// name1(`name1`,`p`,`Darpan`);
+
+
+//get & set Method
+
+// let propertyName = "html";
+// class CustomHTMLElement {
+//  constructor(element) {
+//  this.element = element;
+//  }
+//  get [propertyName]() {
+//  return this.element.innerHTML;
+//  }
+// //  set [propertyName](value) {
+// //  this.element.innerHTML = value;
+// //  }
+// }
+// let value = document.getElementById("h1");
+// let x =new CustomHTMLElement(value);
+// console.log(x.element)
+// // x.html();
+// console.log(x.html);
+// console.log(x.html("Hello Darpan"))
+
+
+
+// generator operator
+// let func=(items) =>{
+// let i=0;
+// return{
+// plus : ()=>{
+// 	let done = (i>= items.length);
+// 	let result = !done? items[i++]:"Completed";
+
+// 	return{
+// 	done:done,
+// 	result:result,
+// }
+// }
+// }
+// }
+
+// var x =func(["darpan","Jasavnt","sagar"]);
+// console.log(x.plus());
+// console.log(x.plus());
+// console.log(x.plus());
+// console.log(x.plus());
+// function *generator(){
+//     yield "X";
+//     yield "Y";
+//     yield "Z";
+// }
+// var x = generator();
+// console.log(x.next().value);
+// console.log(x.next().value);
+// console.log(x.next().value);
+
+
+// function *gener(items){
+//     for(let i=0;i<items.length;i++){
+//         yield items[i]
+//     }
+// }
+// let x = ["Darpan","sagar","kamal","jasvant","Darbar"];
+// let y = gener(x)
+// for(let i=0;i<=x.length;i++){
+//     console.log(y.next())
+// }
+
+
+// for (let key of y) {
+//   console.log(key);
+// }
+
+
+
+
+//Promises
+//1
+// let promise = Promise.resolve("Resolve Darpan");
+
+// promise.then(function(x){
+// 	console.log(x)
+// })
+
+// //2
+// let promise1 = Promise.reject("Reject Darpan");
+
+// promise1.catch(function(x){
+// 	console.log(x)
+// })
+
+// //3
+// let promise3 = Promise.reject("Reject Darpan");
+
+// promise3.then(function(x){
+// 	console.log(x)
+// });
+// //4
+// let promise5 = Promise.reject("Reject2 Darpan");
+
+// promise5.then(null,function(x){
+// 	console.log(x)
+// });
+
+// //4
+// let promise4 = new Promise(function(resolve, reject) {
+//  console.log("Promise");
+//  resolve();
+// });
+// promise4.then(function() {
+//  console.log("Resolved.");
+// });
+// console.log("Hi!");
+
+// let prom = new Promise(function(x){
+//     if(Number(x)>10){
+//         console.log("Result is true");
+//     }
+// },function(y){
+//     if(Number(y)<10){
+//         console.error("Result is False");
+//     }
+
+// });
+
+// let p1 = prompt("Enter your value");
+
+
+// let promise = new Promise(function(resolve,reject){
+//     if(Number(p1)>10){
+//         console.log(`Condition is true and value is ${p1}`);   
+//         resolve();
+//     }
+//     else{
+//     console.log(`Condition is false and value is ${p1}`);
+//     }
+    
+// });
+
+
+// let promise = new Promise(function(resolve, reject) {
+//  console.log("Promise")
+//  if(p1<=10){
+//  resolve(`Condition is true and value is ${p1}`);
+//  }
+//  else{
+//     reject(`Condition is false and value is ${p1}`);
+//     }
+// });
+// promise.then(function(value) {
+//  console.log("Resolved.",value);
+// });
+// promise.catch(function(value) {
+//  console.log("Reject.",value);
+// });
+// console.log("Hyllo");
+
+
+// let promise = new Promise(function(resolve, reject) {
+//  console.log("1st Number console")
+//  if(p1<=10){
+//  resolve(`Condition is true and value is ${p1}`);
+//  }
+//  else{
+//     reject(`Condition is false and value is ${p1}`);
+//     }
+// });
+// promise.then(function(value) {
+//  console.log("3rd Number Resolved.",value);
+// });
+// promise.catch(function(value) {
+//  console.log("3rd Number Reject.",value);
+// });
+// console.log("2nd Number COnsole")
+
+
+
+
+
+// let resol = Promise.resolve(p1);
+// let rejec = Promise.reject(p1);
+// resol.then(function(x){
+// 	if(x>=10){
+//     console.log(`Condition is true and value is ${x}`);
+//     }
+// });
+// rejec.catch(function(x){
+// 	if(x<10){
+//     console.log(`Condition is false and value is ${x}`);
+//     }
+// });
+
+
+
+
+//new example
+
+
+// var p1 = prompt("Enter your first Number");
+// var p2 = prompt("Enter your second Number");
+// var p3 = prompt("Enter your third Number");
+// var p4 = prompt("Enter your fourth Number");
+
+// var array = [];
+// array.push(p1,p2,p3,p4);
+// // var array = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20];
+// // let even = [array[0],array[2],array[4],array[6],array[8],array[10],array[12],array[14],array[16],array[18]];
+// // console.log(even);
+// // let odd = [array[1],array[3],array[5],array[7],array[9],array[11],array[13],array[15],array[17],array[19]];
+// // console.log(odd);
+// var odd=[];
+//  var even= [];
+
+// var promise = new Promise(function(resolve,reject){
+//     for (var i = 0; i < array.length; i++) { 
+//     if (array[i] % 2 === 0) {
+//         even.push(array[i]);
+//         // console.log(even);
+//         resolve(even);
+
+//     }
+//     else{
+//         odd.push(array[i]);
+//         // console.log(odd);
+//         reject(odd);
+//     }
+// }
+
+// });
+
+// promise.then(function(value){
+//     console.log("Result is ",value)
+// });
+// promise.catch(function(value1){
+//     console.log("Result is ",value1);
+// })
+
+
+
+
+
+
+//thenable
+// let x = prompt("Enter your value");
+// let thenable = {
+//     then:function(resolve,reject){
+//        if(x>10){
+//            resolve("Your value is true");
+//        }
+//     }
+// }
+// let p1 = Promise.resolve(thenable);
+// p1.then(function(data){
+//     console.log(x,data);
+// })
+
+// let x = prompt("Enter your value");
+// let thenable = {
+//     then:function(resolve,reject){
+//        if(x>10){
+//            resolve("Your value is true");
+//        }
+//        else{
+//            reject("Your value is False")
+//        }
+//     }
+// }
+// let p1 = Promise.resolve(thenable);
+// p1.then(function(data){
+//     console.log(x,data);
+// })
+// p1.catch(function(data){
+//     console.log(x,data);
+// })
+
+// chaining promises
+
+//1
+// let p1 = new Promise(function(resolve, reject) {
+//  resolve(42);
+// });
+// p1.then(function(value) {
+//  console.log(value);
+// }).then(function() {
+//  console.log("Hello world");
+// })
+
+//2
+// let p1 = new Promise(function(resolve, reject) {
+//     resolve("Hello");
+// });
+// p1.then(function(value) {
+//     throw new Error(value);
+// }).then(function(err) {
+//  console.log(err.message);
+// })
+
+
+//3
+let p1 = new Promise(function(resolve, reject) {
+ resolve(42);
+});
+let p2 = new Promise(function(resolve, reject) {
+ reject(43);
+});
+let p3 = new Promise(function(resolve, reject) {
+ resolve(44);
+});
+let p4 = Promise.all([p1, p2, p3]);
+p4.then(function(value) {
+ console.log(Array.isArray(value)) // false
+ console.log(value); // 43
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// console.log(y.next().value);
+// console.log(y.next().value);
+// console.log(y.next().value);
+// console.log(y.next().value);
+
+
+//1
+// var a = "Hello1";
+// console.log(window.a);
+// console.log(typeof a);
+// console.log(a.length);
+
+// //2
+// var b = "Hello1";
+// console.log(window.b === b);
+// console.log(typeof b);
+// console.log(b.length);
+
+// //3
+// var c = "Hello1";
+// console.log("c" in window);
+// console.log(typeof c);
+// console.log(c.length);
+
+// //4
+// let d= "Hello";
+// console.log(window.d);
+// console.log(typeof d);
+// console.log(d.length);
+
+// //5
+// let e = "Hello1";
+// console.log(window.e === e);
+// console.log(typeof e);
+// console.log(e.length);
+
+// //6
+// let f = "Hello1";
+// console.log("f" in window);
+// console.log(typeof f);
+// console.log(f.length);
+
+// //7
+// const g= "Hello";
+// console.log(window.g);
+// console.log(typeof g);
+// console.log(g.length);
+
+// //8
+// const h = "Hello1";
+// console.log(window.h === h);
+// console.log(typeof h);
+// console.log(h.length);
+
+// //9
+// const i = "Hello1";
+// console.log("i" in window);
+// console.log(typeof i);
+// console.log(i.length);
+
+// //10
+// var j = "Hello \n World";
+// console.log(j);
+
+
+
+
+//Func
+
+//1
+// console.log("==> 'Example=1'");
+// function mixArgs(a, b) {
+//  console.log(a === arguments[0]);  //true
+//  console.log(b === arguments[1]);  //true
+//  a = "c";
+//  b = "d";
+//  console.log(a === arguments[0]);  //true
+//  console.log(b === arguments[1]);  //true
+// }
+// mixArgs("a", "b");
+
+
+
+// //2
+// console.log("'==> Example=2'");
+// function mixArgs1(first, second) {
+//  "use strict";
+//  console.log(first === arguments[0]); //true
+//  console.log(second === arguments[1]); //true
+//  first = "c";
+//  second = "d"
+//  console.log(first === arguments[0]);  //false
+//  console.log(second === arguments[1]); //false
+// }
+// mixArgs1("a", "b");
+
+
+
+// //3
+// console.log("'==> Example=3'");
+// function getValue() {
+//  return 5;
+// }
+// function add(x, y = getValue()) {
+//  return x + y;
+// }
+// console.log(add(4, 2)); //6
+// console.log(add(6));   //11
+
+
+
+
+// //4
+// console.log("'==> Example=4'");
+// // function func(first = second, second) {
+// //  return first + second;
+// // }
+// // console.log(func(4, 6)); // 10
+// // console.log(func(undefined, 1));  // error
+
+
+// //5
+// console.log("'==> Example=5'");
+// let d = value => value;
+
+// d(5); 
+
+
+// //6
+// console.log("'==> Example=6'");
+// let e = (value,value2) => value,value2;
+
+// e(5,6); 
+
+
+// //7
+// console.log("'==> Example=7'");
+// let value = (nam,age) => {
+// return{name:nam,
+// Age:age};
+// console.log(nam,age)};
+// value("darpan",19);
+
+
+// //8
+// console.log("'==> Example=8'");
+// let person = ((name) => {
+//  return {
+//  getName: function() {
+//  return name;
+//  }
+//  };
+// })("Darpan");
+// console.log(person.getName());
+
+
+// //9
+// console.log("'==> Example=9'");
+// let x = 89;
+// let calTot = merchTot => {
+// let orderTot;
+// if (merchTot >= 100) {
+// orderTot = merchTot;
+// }
+// else if (merchTot < 50.01) {
+// orderTot = merchTot + 5;
+// }
+// else {
+// orderTot = merchTot + 5 + (.03 * (merchTot - 50));
+// }
+// return orderTot;
+// }
+
+// console.log(calTot(Number(x)));
+
+
+// //10
+// console.log("'==> Example=10'");
+// let vl = (name,age,city) => {
+//     let array = [name,age,city];
+//     console.log(array);
+    
+//     return{
+//         name,
+//         age,
+//         city,
+//     }
+    
+// }
+// console.log(vl("Darpan",19,"Mithi"));
+
+
+
+// //11
+// console.log("'==> Example=11'");
+// let people = nam => ({name: () => nam});
+// console.log(people("Darpan").name());
+
+// //12
+// console.log("'==> Example=12'");
+// let people1 = ((nam) => {
+//     return{
+//         name: function() {
+//             return nam;
+//         }
+//     }
+// })("'Darpan'");
+
+// console.log(people1.name());
+
+
+
+// //13
+// console.log("'==> Example=13'");
+// console.log(+0 == -0);
+// console.log(+0 === -0);
+// console.log(Object.is(+0, -0));
+
+// console.log(NaN ==NaN);
+// console.log(NaN ===NaN);
+// console.log(Object.is(NaN, NaN));
+
+
+// //14
+// console.log("'==> Example=14'");
+// let last1 = "Last"
+// let obj1 = {
+//     name: "Darpan",
+//     [last1+"name"]: "Ramesh",
+// },
+// name1="umar"
+
+// let {name:myName1,Lastname,flag1="true"} = obj1;
+
+// console.log(myName1,Lastname); 
+// console.log(flag1);
+// console.log(name1)        
+
+
+// //15
+// console.log("'==> Example=15'");
+// let last = "Last"
+// let obj = {
+//     name: "Darpan",
+//     [last+"name"]: "Ramesh",
+// }
+// let name = "Jasvant";
+// let {name:myName,Lastname:lastName,flag="true"} = obj;
+
+// console.log(myName,lastName); // Darpan Ramesh
+// console.log(flag);            // true
+// console.log(name);            // Jasvant
+
+//16
+// let node = {
+//  type: "Identifier",
+//  name: "foo"
+// },
+// type = "Literal",
+// name = 5;
+// function outputInfo(value) {
+//  console.log(value === node); 
+//  console.log(value); 
+// console.log(node);
+// }
+// outputInfo({ } = node);
+// // let {} = node
+// console.log(type); 
+// console.log(name);
+
+
+// for understanding
+// //ex 1
+// let node={
+//     name:"umar",
+//     fname:"aslam"
+// }
+
+// let {name,fname}=node
+
+// console.log(name,fname)
+
+// //ex2
+
+// let node={
+//     name:"umar",
+//     fname:"aslam"
+// }
+
+// name="u"
+// fname="a"
+
+// let {name:myName,fname:myFname}=node
+
+// console.log(name,fname)
+
+
+// //ex3
+// let node={
+//     name:"umar",
+//     fname:"aslam"
+// }
+
+// name="u"
+// fname="a"
+
+// let {}=node
+
+// console.log(name,fname)
+
+
+
+// //ex4 functions
+
+// let node = {
+//     type: "Identifier",
+//     name: "foo"
+//    },
+
+//    type = "Literal",
+//    name = 5;
+   
+//    function outputInfo(value) {
+//     console.log(value === node); // true
+//    }
+//    outputInfo({ type, name } = node);
+//    console.log(type); // "Identifier"
+//    console.log(name); 
+
+
+// //ex5 
+
+// let node = {
+//     type: "Identifier",
+//     name: "foo"
+//    },
+
+//    type = "Literal",
+//    name = 5;
+   
+//    function outputInfo(value) {
+//        console.log(value);
+//        console.log(node)
+//     console.log(value === node); // true
+//    }
+//    outputInfo( { } = node ) ;
+//    outputInfo( { a , b } = node ) ;
+//    outputInfo( { a  } = node ) ;
+
+
+//    console.log(type); // "Identifier"
+//    console.log(name);
+
+//pbject
+
+//    let node = {
+//     type: "Identifier",
+//     name: "foo",
+//     loc: {
+//      start: {
+//       line: 1,
+//       column: 1
+//       },
+//      end: {
+//       line: 1,
+//       column: 4,
+//       array:["value1","value2","value3","value4"],
+//        lastEnd:{
+//            lineEnd:1.1,
+//            coulmnEND:1.2,
+//        }
+//       }
+//     }
+//    };
+//    // extract node.loc.start
+
+//    let {loc:{end:{lastEnd:{lineEnd,coulmnEND}}}} = node;
+// console.log(lineEnd);
+// console.log(coulmnEND);
+
+
+//array
+//1
+// let x = ["one","two","Three"];
+
+// [first,second] = x
+
+// console.log(first);
+// console.log(second);
+
+
+
+
+
+
+// //2
+
+// let y = ["one","two","Three"];
+
+// [,,third] = y
+
+// console.log(third);
+
+// //3
+// let colors = [ "red", "green", "blue" ],
+//  firstColor = "black",
+//  secondColor = "purple";
+// [ firstColor, secondColor ] = colors;
+// console.log(firstColor); 
+// console.log(secondColor);
+
+// //3
+// let a = 1,
+//  b = 2;
+// [ a, b ] = [ b, a ];
+// console.log(a); // 2
+// console.log(b);
+
+
+// //4
+// let z = ["one","two","Three"];
+
+// [...third] = z
+
+// console.log(third);
+
+
+
+// //array+object
+// // let node = {
+// //     type: "Identifier",
+// //     name: "foo",
+// //     loc: {
+// //      start: {
+// //       line: 1,
+// //       column: 1
+// //       },
+// //      end: {
+// //       line: 1,
+// //       column: 4,
+// //       array:["value1","value2","value3","value4"],
+// //        lastEnd:{
+// //            lineEnd:1.1,
+// //            coulmnEND:1.2,
+// //        }
+// //       }
+// //     }
+// //    };
+// //    // extract node.loc.start
+
+// //    let {loc:{end:{array:[v1,v2,v3,v4],lastEnd:{lineEnd,coulmnEND}}}} = node;
+// // console.log(lineEnd);
+// // console.log(coulmnEND);
+// // console.log(v1);
+// // console.log(v2);
+// // console.log(v3);
+// // console.log(v4);
+
+// //nested arrayobject
+// let node = {
+//     type: "Identifier",
+//     name: "foo",
+//     loc: {
+//      start: {
+//       line: 1,
+//       column: 1
+//       },
+//      end: {
+//       line: 1,
+//       column: 4,
+//       array:["value1","value2","value3",["x","y","z"]],
+//        lastEnd:{
+//            lineEnd:1.1,
+//            coulmnEND:1.2,
+//        }
+//       }
+//     }
+//    };
+//    // extract node.loc.start
+
+//    let {loc:{end:{array:[...totalarray],lastEnd:{lineEnd,coulmnEND}}}} = node;
+// console.log(totalarray[0]);
+// console.log(totalarray[1]);
+// console.log(totalarray[2]);
+// console.log(totalarray[3]);
+// // console.log(lineEnd);
+// // console.log(coulmnEND);
+// // console.log(v1);
+// // console.log(v2);
+// // console.log(v3);
+// console.log(totalarray[3][0]);
+// console.log(totalarray[3][1]);
+// console.log(totalarray[3][2]);
+
+
+
+//task
+
+// var data = ["value1","value2","value3",["value4.1","value4.2","value4.3"],{x:"value5.1",y:"value5.2",z:"value5.3"}];
+
+// [...result] = data
+// console.log(result);
+// console.log(result[3])
+// console.log(result[3][0])
+// console.log(result[3][1])
+// console.log(result[3][2])
+// console.log(result[4])
+// console.log(result[4].x)
+// console.log(result[4].y)
+// console.log(result[4].z)
+
+
+
+
+
+//Class
+
+//1
+// class Plan{
+//     constructor(name, price, space, transfer, pages) {
+//  this.name = name;
+//  this.price = price;
+//  this.space = space;
+//  this.transfer = transfer;
+//  this.pages = pages;
+//  }
+// }
+// let x = new Plan("Basic", 3.99, 100, 1000, 10);
+// console.log(x);
+
+
+// //2
+// class Plan1{
+//     constructor(name, price, space, transfer, pages, discountMonths) {
+//  this.name = name;
+//  this.price = price;
+//  this.space = space;
+//  this.transfer = transfer;
+//  this.pages = pages;
+//  this.discountMonths = discountMonths;
+//  this.calcAnnual = function(percentIfDisc) {
+//  let bestPrice = this.price;
+
+//  let currDate = new Date();
+//  let thisMo = currDate.getMonth();
+//  for (let i = 0; i < this.discountMonths.length; i++) {
+//  if (this.discountMonths[i] === thisMo) {
+//  bestPrice = this.price * percentIfDisc;
+//  break;
+//  }
+//  }
+//  return bestPrice * 12;
+//  };
+//  }
+// }
+
+// let p1 = new Plan1("Basic", 4.99, 100, 1000, 10, [6, 7]);
+// let p2 = new Plan1("Premium", 5.99, 500, 5000, 50, [6, 7, 11]);
+// let p3 = new Plan1("Ultimate", 9.99, 2000, 20000, 500, [6, 7]);
+
+// console.log(p1.calcAnnual());
+// console.log(p2.calcAnnual());
+// console.log(p3.calcAnnual());
+
+// //3
+
+// class Plan2{
+//     constructor(name, price, space, transfer, pages, discountMonths) {
+//  this.name = name;
+//  this.price = price;
+//  this.space = space;
+//  this.transfer = transfer;
+//  this.pages = pages;
+//  this.discountMonths = discountMonths;
+// }
+// calcAnnual(percentIfDisc) {
+//  let bestPrice = this.price;
+//  let currDate = new Date();
+//  let thisMo = currDate.getMonth();
+//  for (let i = 0; i < this.discountMonths.length; i++) {
+//  if (this.discountMonths[i] === thisMo) {
+//  bestPrice = this.price * percentIfDisc;
+//  break;
+//  }
+//  }
+//  return bestPrice * 12;
+//  };
+
+// }
+
+// let result = new Plan2("Ultimate", 19.99, 2000, 20000, 500, [6, 7]);
+// console.log(result.calcAnnual());
+
+
+// navigator.geolocation.getCurrentPosition((location)=>{
+//     alert("location",location);
+// })
+
+// let method = "NewFunc"
+
+// class clfunc{
+//     constructor(value){
+//         this.value = value;
+//     }
+//     [method](){
+//         console.log(this.value);
+//     }
+// }
+
+// let x = new clfunc("Hi");
+// x.NewFunc();
+
+
+
+
+
+
+
+</script>
+</html>
